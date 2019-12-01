@@ -23,6 +23,7 @@ object People {
             _users.find { it.id.toString() == id }
                     ?: throw IllegalArgumentException("No user found for $id")
 
-
+    //
+    fun get(id:Int)  = get(id.toString())
 
 }
