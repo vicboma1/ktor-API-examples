@@ -1,5 +1,6 @@
 package people
 
+import java.lang.IllegalArgumentException
 import java.util.concurrent.*
 import java.util.concurrent.atomic.AtomicInteger
 
@@ -16,6 +17,12 @@ object People {
         _users.add(user)
         return user
     }
+
+    //
+    fun get(id:String) =
+            _users.find { it.id.toString() == id }
+                    ?: throw IllegalArgumentException("No user found for $id")
+
 
 
 }
