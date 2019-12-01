@@ -31,4 +31,21 @@ object People {
 
     //
     fun getAllArray() = _users.toArray()
+
+    //
+    fun remove(user: User)  {
+        if(_users.contains(user))
+         throw IllegalArgumentException("No user remove for ${user.id}")
+
+        _users.remove(user);
+    }
+
+    //
+    fun remove(id:String)= _users.remove(get(id))
+
+    //
+    fun remove (id:Int) = _users.remove(get(id))
+
+    //
+    fun clear() = _users.clear()
 }
