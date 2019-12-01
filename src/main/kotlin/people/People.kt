@@ -28,4 +28,7 @@ object People {
 
     //
     fun getAllList() = _users.toList()
+
+    //
+    fun getAllArray() = _users.toArray()
 }
