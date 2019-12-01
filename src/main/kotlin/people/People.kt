@@ -26,4 +26,6 @@ object People {
     //
     fun get(id:Int)  = get(id.toString())
 
+    //
+    fun getAllList() = _users.toList()
 }
