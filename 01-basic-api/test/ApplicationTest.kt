@@ -93,6 +93,17 @@ class ApplicationTest {
         delete("del",HttpStatusCode.BadRequest,"{\n" + "  \"error\": \"id is null\"\n" + "}")
     }
 
+    @Test
+    fun testDeleteNotFoundRequest() {
+        delete("1",HttpStatusCode.NotFound,"{\n" + "  \"error\": \"User 1 is not found\"\n" + "}")
+    }
+
+    @Test
+    fun testDeleteOKRequest() {
+        post(1)
+        delete("1",HttpStatusCode.OK,"{\n" +"  \"id\": 1,\n" + "  \"name\": \"vicboma1\",\n" + "  \"age\": 33\n" + "}")
+    }
+
     private fun delete(id:String, code: HttpStatusCode, expected :String) =
         withTestApplication({ main(userHandlerMock!!) }) {
             handleRequest(HttpMethod.Get, "$REST_ENDPOINT_USER/$id").apply {
