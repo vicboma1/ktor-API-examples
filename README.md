@@ -3,7 +3,7 @@
 ### Ejemplos con KTOR para la creación de un API REST
 
 
-#### 01 Basic API | CRUD 
+#### [01 Basic API | CRUD](https://github.com/vicboma1/ktor-API-examples/tree/master/01-basic-api) 
 ```
     Exposición de una API básica con los elementos operacionales del CRUD
     Operaciones: [ get, put, post, delete]
@@ -37,3 +37,30 @@
     Bloque SafetyAsync en los elementos del route
 ```
 ![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/03-location-api.png)
+
+
+#### 04 Async API | withContext 
+```
+    Exposición de una API enriquecida con los elementos operacionales del CRUD - number
+    Operaciones: [ get, getAll, add, postMinor, postMajor, postEquals, delete, deleteAll ]
+    Bloque SafetyAsyncWithContext en los elementos del route (no optimizado, es global a la operación)
+    Retrocompatibilidad con proyecto [ 03 Locations API | type-safe Routing ]
+```
+![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/04-async-api.png)
+
+
+### OTROS
+
+--->>> [Repo: Getting Started Kotlin](https://github.com/vicboma1/GettingStartedKotlin)   <<<---
+
+--->>> [Repo: Problems Kotlin](https://github.com/vicboma1/Kotlin-Examples-Problems/blob/master/README.md)   <<<---
+
+--->>> [Repo: GameBoy Emulator Enviroment](https://github.com/vicboma1/GameBoyEmulatorEnvironment)   <<<---
+
+--->>> [Repo: Kotlin Mobile](https://github.com/vicboma1/KotlinMobilePoC_MasterUV2018)   <<<---
+
+--->>> [Repo: Kotlin JavaScript](https://github.com/vicboma1/kotlinJavaScript)  <<<---
+
+--->>> [Repo: Kotlin Native-iOS](https://github.com/vicboma1/Kotlin-Native-iOS-ConsoleAsync)  <<<---
+
+--->>> [Repo: Kotlin Koans Examples](https://github.com/vicboma1/Kotlin-Koans)  <<<---
