@@ -37,3 +37,21 @@
     Bloque SafetyAsync en los elementos del route
 ```
 ![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/03-location-api.png)
+
+
+
+### OTROS
+
+--->>> [Repo: Getting Started Kotlin](https://github.com/vicboma1/GettingStartedKotlin)   <<<---
+
+--->>> [Repo: Problems Kotlin](https://github.com/vicboma1/Kotlin-Examples-Problems/blob/master/README.md)   <<<---
+
+--->>> [Repo: GameBoy Emulator Enviroment](https://github.com/vicboma1/GameBoyEmulatorEnvironment)   <<<---
+
+--->>> [Repo: Kotlin Mobile](https://github.com/vicboma1/KotlinMobilePoC_MasterUV2018)   <<<---
+
+--->>> [Repo: Kotlin JavaScript](https://github.com/vicboma1/kotlinJavaScript)  <<<---
+
+--->>> [Repo: Kotlin Native-iOS](https://github.com/vicboma1/Kotlin-Native-iOS-ConsoleAsync)  <<<---
+
+--->>> [Repo: Kotlin Koans Examples](https://github.com/vicboma1/Kotlin-Koans)  <<<---
