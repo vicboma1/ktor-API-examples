@@ -13,7 +13,7 @@
 ![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/01-basic-api.png)
 
 
-#### 02 Rich API | CRUD
+#### [02 Rich API | CRUD](https://github.com/vicboma1/ktor-API-examples/tree/master/02-rich-api)
 ```
     Refactors en el routing anclando el end-point base
     Refactors en el route sin rutas, solo parámetros de entrada
