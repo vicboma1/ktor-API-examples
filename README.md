@@ -25,7 +25,7 @@
 ![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/02-rich-api.png)
 
 
-#### 03 Locations API | type-safe Routing
+#### [03 Locations API | type-safe Routing](https://github.com/vicboma1/ktor-API-examples/tree/master/03-locations-api)
 ```
     Modelos tipados con anotaciones @Locations (refactor friendly)
     Tipado estático para el acceso de diferentes parametros en el route
