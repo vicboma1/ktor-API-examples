@@ -50,7 +50,7 @@
 
 #### 05 Flow API | Experimentos
 ```
-    Exposición de una API enriquecida con elementos operacionales reactivos y diferentes block-body
+    Exposición de una API enriquecida con elementos operacionales flowables y diferentes block-body
     Operaciones: [ getFlow, getFlowBlock, getFlowContext, getFlowOdd, getFlowBlockOdd, getFlowContextOdd,getFlowEven, getFlowBlockEven, getFlowContextEven ]
     Refactor en el routing con un solo entryPoint 
     Retrocompatibilidad con proyecto [ 04 Async API | withContext ]
