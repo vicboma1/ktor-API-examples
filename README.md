@@ -57,6 +57,15 @@
 ```
 ![]()
 
+#### [06 Image API | Monochroma ](https://github.com/vicboma1/ktor-API-examples/tree/master/05-flow-api)
+```
+    Basado en el video 'Mobile Backends with Kotlin and Google Cloud (Google I/O'19)' pero alojando el recurso en Local
+    Exposición de una API customizada para el tratamiento de imágenes
+    Operacion: [ putColorChroma] 
+    Retrocompatibilidad con proyecto [ 05 Flow API | Experimentos ]
+```
+![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/ApiRestImage.gif)
+
 ### Referencias 
 *  [Documentación oficial](https://ktor.io/)
 *  [Mobile Backends with Kotlin and Google Cloud (Google I/O'19)](https://youtu.be/zjWOMBdPbsI)
