@@ -57,7 +57,7 @@
 ```
 ![]()
 
-#### [06 Image API | Monochroma ]()
+#### 06 Image API | Monochroma
 ```
     Basado en el video 'Mobile Backends with Kotlin and Google Cloud (Google I/O'19)' pero alojando el recurso en Local
     Exposición de una API customizada para el tratamiento de imágenes
