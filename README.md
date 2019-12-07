@@ -13,7 +13,7 @@
 ![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/01-basic-api.png)
 
 
-#### 02 Rich API | CRUD
+#### [02 Rich API | CRUD](https://github.com/vicboma1/ktor-API-examples/tree/master/02-rich-api)
 ```
     Refactors en el routing anclando el end-point base
     Refactors en el route sin rutas, solo parámetros de entrada
@@ -25,7 +25,7 @@
 ![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/02-rich-api.png)
 
 
-#### 03 Locations API | type-safe Routing
+#### [03 Locations API | type-safe Routing](https://github.com/vicboma1/ktor-API-examples/tree/master/03-locations-api)
 ```
     Modelos tipados con anotaciones @Locations (refactor friendly)
     Tipado estático para el acceso de diferentes parametros en el route
@@ -39,7 +39,7 @@
 ![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/03-location-api.png)
 
 
-#### 04 Async API | withContext 
+#### [04 Async API | withContext](https://github.com/vicboma1/ktor-API-examples/tree/master/04-async-api)
 ```
     Exposición de una API enriquecida con los elementos operacionales del CRUD - number
     Operaciones: [ get, getAll, add, postMinor, postMajor, postEquals, delete, deleteAll ]
@@ -48,14 +48,23 @@
 ```
 ![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/04-async-api.png)
 
-#### 05 Flow API | Experimentos
+#### [05 Flow API | Experimentos](https://github.com/vicboma1/ktor-API-examples/tree/master/05-flow-api)
 ```
-    Exposición de una API enriquecida con elementos operacionales reactivos y diferentes block-body
+    Exposición de una API enriquecida con elementos operacionales flowables y diferentes block-body
     Operaciones: [ getFlow, getFlowBlock, getFlowContext, getFlowOdd, getFlowBlockOdd, getFlowContextOdd,getFlowEven, getFlowBlockEven, getFlowContextEven ]
     Refactor en el routing con un solo entryPoint 
     Retrocompatibilidad con proyecto [ 04 Async API | withContext ]
 ```
 ![]()
+
+#### 06 Image API | Monochroma
+```
+    Basado en el video 'Mobile Backends with Kotlin and Google Cloud (Google I/O'19)' pero alojando el recurso en Local
+    Exposición de una API customizada para el tratamiento de imágenes
+    Operacion: [ putColorMono] 
+    Retrocompatibilidad con proyecto [ 05 Flow API | Experimentos ]
+```
+![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/ApiRestImage.gif)
 
 ### Referencias 
 *  [Documentación oficial](https://ktor.io/)
