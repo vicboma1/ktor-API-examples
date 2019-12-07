@@ -66,7 +66,7 @@
 ```
 ![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/06-monochrome-api.png)
 
-![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/ApiRestImage.gif)
+![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/06-monochroma-api.gif)
 
 ### Referencias 
 *  [Documentación oficial](https://ktor.io/)
