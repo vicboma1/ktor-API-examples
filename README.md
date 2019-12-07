@@ -64,7 +64,7 @@
     Operacion: [ putColorMono] 
     Retrocompatibilidad con proyecto [ 05 Flow API | Experimentos ]
 ```
-![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/06-monochroma-api.png)
+![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/06-monochrome-api.png)
 
 ![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/ApiRestImage.gif)
 
