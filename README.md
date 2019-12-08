@@ -68,6 +68,15 @@
 
 ![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/06-monochroma-api.gif)
 
+#### [07 static Content API | Imagen](https://github.com/vicboma1/ktor-API-examples/tree/master/06-staticcontent-api)
+```
+    Reemplazo de 'install(DefaultHeader)' por 'install(AutoHeadResponse)'
+    Definición de un remotePath
+    Añadido paquete con recursos
+    Retrocompatibilidad con proyecto [ 06 Image API | Monochroma ]
+```
+![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/06-monochrome-api.png)
+
 ### Referencias 
 *  [Documentación oficial](https://ktor.io/)
 *  [Mobile Backends with Kotlin and Google Cloud (Google I/O'19)](https://youtu.be/zjWOMBdPbsI)
