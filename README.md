@@ -68,7 +68,7 @@
 
 ![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/06-monochroma-api.gif)
 
-#### [07 static Content API | Imagen](https://github.com/vicboma1/ktor-API-examples/tree/master/06-staticcontent-api)
+#### [07 static Content API | Recursos](https://github.com/vicboma1/ktor-API-examples/tree/master/07-staticcontent-api)
 ```
     Reemplazo de 'install(DefaultHeader)' por 'install(AutoHeadResponse)'
     Definición de un remotePath
@@ -83,6 +83,7 @@
 *  [GOTO 2019 • Server-side Kotlin with Coroutines • Roman Elizarov](https://www.youtube.com/watch?v=hQrFfwT1IMo)
 *  [Asynchronous-flow](https://github.com/Kotlin/kotlinx.coroutines/blob/7f0da424ed98e3a30e0a7ca2daff33f9a9cdbf0c/docs/flow.md#asynchronous-flow)
 *  [LiveData with Coroutines and Flow (Android Dev Summit '19)](https://www.youtube.com/watch?v=B8ppnjGPAGE)
+*  [Server-Side Development with Ktor by Hadi Hariri - Bengaluru, June 22, 2019](https://youtu.be/Y4kyTpi_qO4)
 *  [Repo: Getting Started Kotlin](https://github.com/vicboma1/GettingStartedKotlin)    
 *  [Repo: Problems Kotlin](https://github.com/vicboma1/Kotlin-Examples-Problems/blob/master/README.md)    
 *  [Repo: GameBoy Emulator Enviroment](https://github.com/vicboma1/GameBoyEmulatorEnvironment)    
