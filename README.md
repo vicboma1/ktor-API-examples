@@ -68,7 +68,7 @@
 
 ![](https://github.com/vicboma1/ktor-API-examples/blob/master/00-assets/06-monochroma-api.gif)
 
-#### [07 static Content API | Imagen](https://github.com/vicboma1/ktor-API-examples/tree/master/06-staticcontent-api)
+#### [07 static Content API | Recursos](https://github.com/vicboma1/ktor-API-examples/tree/master/07-staticcontent-api)
 ```
     Reemplazo de 'install(DefaultHeader)' por 'install(AutoHeadResponse)'
     Definición de un remotePath
