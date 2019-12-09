@@ -1,6 +1,8 @@
-package com.example.endpoint.routing.routingNumber
+package com.example
 
 import app.main
+import com.example.endpoint.routing.routingNumber.*
+import com.example.endpoint.routing.routingUser.REST_ENDPOINT_USER
 import com.example.endpoint.routing.routingUser.users.NumberHandler
 import io.ktor.http.*
 import io.ktor.locations.KtorExperimentalLocationsAPI
@@ -30,6 +32,15 @@ class ApplicationNumberTest {
     }
 
     @Test
+    fun testRoot() {
+        withTestApplication({ main() }) {
+            handleRequest(HttpMethod.Get, "/").apply {
+                assertNull(response.status())
+            }
+        }
+    }
+
+    @Test
     fun testGetAllResolveEmpty() {
         withTestApplication({ main() }) {
             handleRequest(HttpMethod.Get,  REST_ENDPOINT_NUMBER
@@ -42,8 +53,7 @@ class ApplicationNumberTest {
 
     @Test
     fun testGetAllResolve() {
-        val jsonBodyResponse =
-            toJSON(IntRange(0, 3).iterator())
+        val jsonBodyResponse = toJSON(IntRange(0,3).iterator())
         add(3)
         withTestApplication({ main() }) {
             handleRequest(HttpMethod.Get, REST_ENDPOINT_NUMBER
@@ -118,38 +128,26 @@ class ApplicationNumberTest {
     @Test
     fun testGetAllRequest() {
         add(50)
-        val expected = toJSON(IntRange(0, 50).iterator())
+        val expected = toJSON(IntRange(0,50).iterator())
         getAll(HttpStatusCode.OK,expected)
     }
 
     @Test
     fun testPostMinorRequest() {
         add(50)
-        minor(
-            HttpStatusCode.OK,
-            40,
-            toJSON(IntRange(0, 39).iterator())
-        )
+        minor(HttpStatusCode.OK,40,toJSON(IntRange(0,39).iterator()))
     }
 
     @Test
     fun testPostMajorRequest() {
         add(50)
-        major(
-            HttpStatusCode.OK,
-            10,
-            toJSON(IntRange(11, 50).iterator())
-        )
+        major(HttpStatusCode.OK,10,toJSON(IntRange(11,50).iterator()))
     }
 
     @Test
     fun testPosEqualsRequest() {
         add(50)
-        equals(
-            HttpStatusCode.OK,
-            10,
-            toJSON(listOf(10).iterator())
-        )
+        equals(HttpStatusCode.OK,10,toJSON(listOf(10).iterator()))
     }
 
     private fun delete(id:String, code: HttpStatusCode, expected :String) =
@@ -186,8 +184,7 @@ class ApplicationNumberTest {
 
     private fun add(size: Int) =
         withTestApplication({ main() }) {
-            val jsonBodyResponse =
-                toJSON(IntRange(0, size).iterator())
+            val jsonBodyResponse = toJSON(IntRange(0,size).iterator())
             val jsonBodyRequest = "{\n  \"id\": $size\n}"
 
             handleRequest(HttpMethod.Post, "$REST_ENDPOINT_NUMBER$REST_ENDPOINT_APPEND_NUMBERS"
@@ -202,29 +199,11 @@ class ApplicationNumberTest {
         }
     }
 
-    private fun equals(code: HttpStatusCode, size:Int ,expected : String) =
-        order(
-            code,
-            size,
-            "$REST_ENDPOINT_NUMBER$REST_ENDPOINT_NUMBER_EQUALS",
-            expected
-        )
+    private fun equals(code: HttpStatusCode, size:Int ,expected : String) = order(code, size, "$REST_ENDPOINT_NUMBER$REST_ENDPOINT_NUMBER_EQUALS",expected)
 
-    private fun major(code: HttpStatusCode, size:Int ,expected : String) =
-        order(
-            code,
-            size,
-            "$REST_ENDPOINT_NUMBER$REST_ENDPOINT_NUMBER_MAJOR",
-            expected
-        )
+    private fun major(code: HttpStatusCode, size:Int ,expected : String) = order(code, size, "$REST_ENDPOINT_NUMBER$REST_ENDPOINT_NUMBER_MAJOR",expected)
 
-    private fun minor(code: HttpStatusCode, size:Int,expected : String) =
-        order(
-            code,
-            size,
-            "$REST_ENDPOINT_NUMBER$REST_ENDPOINT_NUMBER_MINOR",
-            expected
-        )
+    private fun minor(code: HttpStatusCode, size:Int,expected : String) = order(code, size, "$REST_ENDPOINT_NUMBER$REST_ENDPOINT_NUMBER_MINOR",expected)
 
     private fun order(code: HttpStatusCode, size: Int, endPoint : String, expected : String) =
         withTestApplication({ main() }) {

@@ -1,6 +1,7 @@
-package com.example.endpoint.routing.routingUser
+package com.example
 
 import app.main
+import com.example.endpoint.routing.routingUser.REST_ENDPOINT_USER
 import com.example.endpoint.routing.routingUser.users.UserHandler
 import io.ktor.http.*
 import io.ktor.locations.KtorExperimentalLocationsAPI
@@ -26,6 +27,15 @@ class ApplicationUserTest {
         UserHandler.apply {
             clear()
             incA = AtomicInteger()
+        }
+    }
+
+    @Test
+    fun testRoot() {
+        withTestApplication({ main() }) {
+            handleRequest(HttpMethod.Get, "/").apply {
+                assertNull(response.status())
+            }
         }
     }
 
@@ -190,4 +200,5 @@ class ApplicationUserTest {
                 assertEquals(jsonBodyResponse, response.content)
             }
         }
-}
+    }
+
