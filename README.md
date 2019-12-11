@@ -55,7 +55,6 @@
     Refactor en el routing con un solo entryPoint 
     Retrocompatibilidad con proyecto [ 04 Async API | withContext ]
 ```
-![]()
 
 #### [06 Image API | Monochroma](https://github.com/vicboma1/ktor-API-examples/tree/master/06-monochroma-api)
 ```
