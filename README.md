@@ -94,6 +94,7 @@
 *  [LiveData with Coroutines and Flow (Android Dev Summit '19)](https://www.youtube.com/watch?v=B8ppnjGPAGE)
 *  [Ktor-samples](https://github.com/ktorio/ktor-samples)
 *  [Server-Side Development with Ktor by Hadi Hariri - Bengaluru, June 22, 2019](https://youtu.be/Y4kyTpi_qO4)
+*  [Hadi Hariri - Introduction to Ktor | Øredev 2019](https://www.youtube.com/watch?v=5fnXIdrqgnA)
 *  [Repo: Getting Started Kotlin](https://github.com/vicboma1/GettingStartedKotlin)    
 *  [Repo: Problems Kotlin](https://github.com/vicboma1/Kotlin-Examples-Problems/blob/master/README.md)    
 *  [Repo: GameBoy Emulator Enviroment](https://github.com/vicboma1/GameBoyEmulatorEnvironment)    
