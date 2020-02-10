@@ -10,6 +10,7 @@ import io.ktor.routing.*
 const val REST_ENDPOINT_USER = "user"
 
 //https://ktor.io/servers/features/routing.html
+@ExperimentalUnsignedTypes
 fun Application.routingUser() {
     //rich CRUD
     routing {
@@ -57,6 +58,7 @@ private fun Route.delete() {
     }
 }
 
+@ExperimentalUnsignedTypes
 private fun Route.deleteId() {
     delete("{id}") {
         safetyAsync {

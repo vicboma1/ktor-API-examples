@@ -11,7 +11,7 @@ val defaultPort = 8080
 val hostName = "--server.host"
 val defaultHost = "127.0.0.1"
 
-
+@ExperimentalUnsignedTypes
 fun main(args: Array<String>) {
     embeddedServer(Netty,
         applicationEngineEnvironment {

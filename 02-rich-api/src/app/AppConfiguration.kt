@@ -10,6 +10,7 @@ import io.ktor.gson.gson
 import java.text.DateFormat
 import java.time.Duration
 
+@ExperimentalUnsignedTypes
 fun Application.main(){
     //https://ktor.io/servers/features/default-headers.html
     install(DefaultHeaders)
@@ -22,7 +23,7 @@ fun Application.main(){
     }
     //https://ktor.io/servers/features/cors.html
     install(CORS){
-        maxAge = Duration.ofDays(1)
+        maxAgeInSeconds = 60 * 60 *24
     }
 
     //https://ktor.io/servers/features/routing.html
