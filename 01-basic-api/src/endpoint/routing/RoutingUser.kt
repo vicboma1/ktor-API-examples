@@ -12,6 +12,7 @@ import io.ktor.routing.*
 const val REST_ENDPOINT_USER = "/user"
 
 //https://ktor.io/servers/features/routing.html
+@ExperimentalUnsignedTypes
 fun Application.routingUser(userHandler:UserHandler) {
     //basic CRUD
     routing {
@@ -47,6 +48,7 @@ private fun Routing.post(userHandler:UserHandler) {
     }
 }
 
+@ExperimentalUnsignedTypes
 private fun Routing.deleteId(userHandler:UserHandler) {
     delete("$REST_ENDPOINT_USER/{id}") {
         safetyAsync {

@@ -14,6 +14,7 @@ val hostName = "--server.host"
 val defaultHost = "127.0.0.1"
 
 
+@ExperimentalUnsignedTypes
 fun main(args: Array<String>) {
     val userHandler = UserHandler()
     embeddedServer(Netty,
@@ -34,6 +35,7 @@ private fun loadPortParam(args: Array<String>) =
 private fun loadHostParams(args: Array<String>) =
     loadParam(args,  defaultHost, hostName)!!
 
+@Suppress("UNCHECKED_CAST")
 private fun <R> loadParam(args: Array<String>, _defaultParam : R, param :String ) =
     when (args.isNotEmpty() && args[0].startsWith(param)) {
         false -> _defaultParam

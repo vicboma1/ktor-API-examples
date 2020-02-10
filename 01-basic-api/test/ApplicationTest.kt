@@ -12,6 +12,7 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNull
 
+@UseExperimental(ExperimentalUnsignedTypes::class)
 class ApplicationTest {
 
     var userHandlerMock : UserHandler? = null
