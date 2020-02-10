@@ -25,7 +25,7 @@ fun Application.main(){
     }
     //https://ktor.io/servers/features/cors.html
     install(CORS){
-        maxAge = Duration.ofDays(1)
+        maxAgeInSeconds = 60 * 60 *24
     }
     //https://ktor.io/servers/features/locations.html
     install(Locations)
